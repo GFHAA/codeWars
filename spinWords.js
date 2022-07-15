@@ -1,12 +1,12 @@
 function spinWords(string) {
     let arr = string.split(" ");
     let arr2 = arr.map(function(el){
-        if(el.lenght >= 5){
-            
+        if(el.length >= 5){
+            return el.split("").reverse().join("")
         }else{
-            console.log(2)
+            return el
         }
     })
-
+    return arr2.join(" ")
 }
-spinWords("Welcome")
+console.log(spinWords("Welcome"))
